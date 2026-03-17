@@ -108,7 +108,7 @@ def main():
     print("Processing %d images from %s" % (len(input_files), INPUT_DIR))
     for i, path in enumerate(input_files):
         name = os.path.basename(path)
-        out_name = os.path.splitext(name)[0] + "x4.png"
+        out_name = os.path.splitext(name)[0] + ".png"
         out_path = os.path.join(OUTPUT_DIR, out_name)
 
         lr_pil = Image.open(path).convert("RGB")
