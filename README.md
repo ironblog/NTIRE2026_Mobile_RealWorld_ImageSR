@@ -47,9 +47,3 @@ python eval.py --output_folder data/test/sr --target_folder data/test/hr --metri
 - **Tile:** 128x128 LR, 24px overlap, Hann blending
 - **Latency:** <166 ms on Dimensity 8400 (NNAPI FP16)
 
-## WARNING
-**Remove all images from `data/` before creating the submission zip.**
-
-```bash
-rm -rf data/test/lr/* data/test/sr/*
-```
